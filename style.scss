@@ -132,8 +132,8 @@ h2{
         height: clamp(4.0em, 5vw, 8.0em);
         border-radius: 50%;
         -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
         -khtml-border-radius: 50%;
+          -moz-border-radius: 50%;
         background-color: $menu;
         opacity: 0.5;
         display: block;
