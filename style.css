@@ -60,7 +60,6 @@ header {
   background-position: right;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-image: url(/img/background-top.jpg);
 }
 @media screen and (max-width: 380px) {
   header {

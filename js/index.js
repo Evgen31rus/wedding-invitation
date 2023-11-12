@@ -16,7 +16,7 @@ classNavigation:['header', 'invitation', 'program', 'form']
     },
     {
     inavationContent: `Мы рады сообщить Вам, что ${dataMain}года состоится самое главное торжество в нашей жизни -  день нашей свадьбы!  Приглашаем Вас разделить вместе с нами  радость этого незабываемого дня.`,
-        photo:' url(/img/image-content.jpg)',
+        photo:' url(./img/image-content.jpg)',
         wishes: 'Ждем вас!',
         pS:`Ваши ${userName[0]} и ${userName[1]}`
     },
@@ -30,8 +30,8 @@ eventTimeDop:['(Кутузовский просп., 23, к. 1)', '(Кремле�
         h3:'Будем благодарны, если Вы подтвердите свое присутствие на нашей свадьбе'
     },
     {
-        backgroundImageHeader: 'url(/img/background-top.jpg)',
-        backgroundImageMain: 'url(/img/background-main-footer.png)', 
+        backgroundImageHeader: 'url(./img/background-top.jpg)',
+        backgroundImageMain: 'url(./img/background-main-footer.png)', 
 
     }
 ]
@@ -73,7 +73,7 @@ startShowLoadingWindow()
 //////////////////////////////////////////////////////////////////////////HEADER///////////////////////////////////////////
 
 //background//
-// document.querySelector('header').style.backgroundImage = mainInfo[6].backgroundImageHeader
+document.querySelector('header').style.backgroundImage = mainInfo[6].backgroundImageHeader
 document.querySelector('.button_menu').addEventListener('click', showeMenu)
 document.querySelector('.close_menu').addEventListener('click', closeMenu)
 let nav = document.querySelector('.nav')
