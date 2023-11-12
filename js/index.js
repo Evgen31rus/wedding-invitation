@@ -73,7 +73,7 @@ startShowLoadingWindow()
 //////////////////////////////////////////////////////////////////////////HEADER///////////////////////////////////////////
 
 //background//
-document.querySelector('header').style.backgroundImage = mainInfo[6].backgroundImageHeader
+// document.querySelector('header').style.backgroundImage = mainInfo[6].backgroundImageHeader
 document.querySelector('.button_menu').addEventListener('click', showeMenu)
 document.querySelector('.close_menu').addEventListener('click', closeMenu)
 let nav = document.querySelector('.nav')
