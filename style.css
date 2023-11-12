@@ -69,7 +69,6 @@ header {
 }
 
 .button_menu {
-  border-radius: 50%;
   align-items: end;
 }
 
@@ -127,6 +126,9 @@ input {
   width: clamp(4em, 5vw, 8em);
   height: clamp(4em, 5vw, 8em);
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -khtml-border-radius: 50%;
   background-color: rgb(46, 69, 39);
   opacity: 0.5;
   display: block;
