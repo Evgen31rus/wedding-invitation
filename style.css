@@ -122,13 +122,18 @@ h2 {
   display: none;
   color: rgb(46, 69, 39);
   text-shadow: 3px 6px rgba(0, 0, 0, 0.3);
-  font-size: clamp(2.6em, 2vw, 5.6em);
+  font-size: clamp(2.4em, 5vw, 5.6em);
   position: absolute;
   text-align: center;
 }
 @media screen and (max-width: 400px) {
   .mobile-version {
     display: flex;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .mobile-version {
+    text-shadow: 2px 2px rgb(245, 239, 239);
   }
 }
 
@@ -233,6 +238,11 @@ input:hover {
   font-size: clamp(1.5em, 2vw, 2em);
   color: rgb(46, 69, 39);
   text-shadow: 1px 1px 2px white, 0 0 1em rgb(46, 69, 39), 0 0 0.2em rgb(46, 69, 39);
+}
+@media screen and (max-width: 1080px) {
+  .top-timer__title {
+    text-shadow: 2px 2px #f6f1f1;
+  }
 }
 
 .timer {
@@ -503,6 +513,7 @@ main {
   font-weight: 400;
   letter-spacing: 0em;
   text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+  position: fixed;
 }
 
 .loading_window_active {
