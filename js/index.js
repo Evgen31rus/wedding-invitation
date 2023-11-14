@@ -71,6 +71,19 @@ setInterval(()=>{
 startShowLoadingWindow()
 
 //////////////////////////////////////////////////////////////////////////HEADER///////////////////////////////////////////
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
+
 
 //background//
 document.querySelector('header').style.backgroundImage = mainInfo[6].backgroundImageHeader
