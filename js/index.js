@@ -142,9 +142,9 @@ function timer() {
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
 
-    Array.from(timerDays.children)[0].textContent = `${days} :`
-    Array.from(timerHour.children)[0].textContent = `${hours} :`
-    Array.from(timerMinutes.children)[0].textContent = `${minutes} :`
+    Array.from(timerDays.children)[0].textContent = `${days}  : `
+    Array.from(timerHour.children)[0].textContent = `${hours}  : `
+    Array.from(timerMinutes.children)[0].textContent = `${minutes}  : `
     Array.from(TimerSeconds.children)[0].textContent = `${seconds}`
     if (distance < 0) {
       clearInterval(Interval);
