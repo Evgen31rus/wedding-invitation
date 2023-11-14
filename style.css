@@ -53,6 +53,7 @@ a {
 }
 
 header {
+  color: rgba(46, 69, 39, 0.53);
   margin: 0 auto;
   width: 100%;
   background-size: cover;
@@ -119,6 +120,12 @@ h2 {
 
 .mobile-version {
   display: none;
+  color: rgba(46, 69, 39, 0.53);
+}
+@media screen and (max-width: 400px) {
+  .mobile-version {
+    display: block;
+  }
 }
 
 input {
@@ -230,7 +237,6 @@ input:hover {
 
 .timer {
   width: 100%;
-  padding: 0px 50px;
   display: flex;
   justify-content: center;
   color: rgba(46, 69, 39, 0.53);
@@ -283,7 +289,7 @@ main {
   font-size: clamp(1em, 3vw, 2em);
 }
 
-.invitation, .program, .form, .footer {
+.invitation, .program, .form, .footer, .wrapper_timer {
   margin: 0 auto;
   background-color: rgba(206, 206, 206, 0.37);
   width: 90%;
