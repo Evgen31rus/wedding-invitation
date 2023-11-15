@@ -205,7 +205,7 @@ h2{
   
   
 .nav{
-
+    overflow: hidden;
    width:clamp(250px, 60vw, 450px);
    padding: 10px;
    max-height: 500px;
