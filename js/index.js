@@ -36,6 +36,16 @@ eventTimeDop:['(Кутузовский просп., 23, к. 1)', '(Кремле�
     }
 ]
 
+function detectBrowser() {
+    const userAgent = navigator.userAgent.toLowerCase();
+ 
+
+     if (userAgent.indexOf('safari') > -1) {
+      Array.from(document.querySelector('head').children).push(` <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=EB+Garamond:ital,wght@1,500&family=Fasthand&family=Flamenco&display=swap" rel="stylesheet">`)
+     }
+    }
+detectBrowser()
+
 ///////////////////////title//////////////////////
 document.querySelector('title').textContent = `${userName[0]} и ${userName[1]} `
 /////////////////////////////////////loading_window

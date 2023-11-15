@@ -6,7 +6,7 @@ html {
   background-color: rgb(128, 128, 128);
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-size: 1.5em;
+  font-style: "Fasthand", cursive;
   color: rgb(46, 69, 39);
   font-size: 62.5%;
 }
@@ -28,7 +28,7 @@ body {
   position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
-  font-family: "Fasthand", cursive;
+  font-family: "EB Garamond", cursive;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,6 +125,7 @@ h2 {
   color: rgb(46, 69, 39);
   text-shadow: 3px 6px rgba(0, 0, 0, 0.3);
   font-size: clamp(1.9em, 6vw, 5.6em);
+  font-style: "Fasthand", cursive;
   position: absolute;
   text-align: center;
 }
@@ -140,8 +141,8 @@ h2 {
 }
 
 .border_radius_safari {
-  width: clamp(4em, 20vw, 8em);
-  height: clamp(4em, 20vw, 8em);
+  width: clamp(3.5em, 18vw, 8em);
+  height: clamp(3.5em, 18vw, 8em);
   border-radius: 50%;
   -khtml-border-radius: 50%;
   position: fixed;

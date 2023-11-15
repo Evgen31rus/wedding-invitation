@@ -2,7 +2,7 @@ $menuListStyle: rgba(38, 150, 9, 0);
 $menu: rgba(46, 69, 39, 1);
 $menuFontColor:rgba(46, 69, 39, 1);
 $fontStyle1:  'Fasthand', cursive;
-$fontStyle2: 'Fasthand', cursive;
+$fontStyle2: 'EB Garamond', cursive;
 $fontSizeStandart: 1.5em;
 $fontSizeBig: 2.0em;
 html{
@@ -12,7 +12,7 @@ html{
    background-color: rgb(128, 128, 128);
    overflow-x: hidden;
    scroll-behavior: smooth;
-   font-size: $fontSizeStandart;
+   font-style: $fontStyle1;
    color:$menuFontColor; 
    font-size: 62.5%;
 }
@@ -132,6 +132,7 @@ h2{
     color:  rgba(46, 69, 39, 1);
     text-shadow:  3px 6px rgba(0, 0, 0, 0.3);
     font-size: clamp(1.9em, 6vw, 5.6em );
+    font-style: $fontStyle1;
     position: absolute;
     text-align: center;
     @media screen and (max-width: 400px) {
@@ -142,8 +143,8 @@ h2{
 }
 }
 .border_radius_safari{
-    width:clamp(4.0em, 20vw, 8.0em); 
-    height: clamp(4.0em, 20vw, 8.0em);;
+    width:clamp(3.5em, 18vw, 8.0em); 
+    height: clamp(3.5em, 18vw, 8.0em);;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
