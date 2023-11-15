@@ -56,12 +56,13 @@ header {
   color: rgba(46, 69, 39, 0.53);
   margin: 0 auto;
   width: 100%;
+  height: clamp(287px, 75vw, 600px);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-image: url("./img/background-top.jpg");
+  /* background-image: url(./img/background-top.jpg); */
 }
 @media screen and (max-width: 400px) {
   header {
@@ -118,11 +119,18 @@ h2 {
   }
 }
 
+.wrapper_timer {
+  top: clamp(150px, 45vw, 350px);
+  position: absolute;
+  width: clamp(60%, 5vw, 80%);
+  height: 100px;
+}
+
 .mobile-version {
   display: none;
   color: rgb(46, 69, 39);
   text-shadow: 3px 6px rgba(0, 0, 0, 0.3);
-  font-size: clamp(2.4em, 5vw, 5.6em);
+  font-size: clamp(1.9em, 6vw, 5.6em);
   position: absolute;
   text-align: center;
 }
@@ -246,7 +254,8 @@ input:hover {
 }
 
 .timer {
-  width: 100%;
+  margin: 0 auto;
+  width: 65%;
   display: flex;
   justify-content: center;
   color: rgb(46, 69, 39);
@@ -256,7 +265,7 @@ input:hover {
   width: 120px;
   min-height: 180px;
   display: block;
-  font-size: clamp(1em, 2vw, 2em);
+  font-size: clamp(0.9em, 2vw, 2em);
   text-shadow: 1px 1px 2px white, 0 0 1em rgb(46, 69, 39), 0 0 0.2em rgb(46, 69, 39);
 }
 .timer .timer_list p:nth-child(2) {
@@ -300,7 +309,7 @@ main {
   font-size: clamp(1em, 3vw, 2em);
 }
 
-.invitation, .program, .form, .footer, .wrapper_timer {
+.invitation, .program, .form, .footer {
   margin: 0 auto;
   background-color: rgba(206, 206, 206, 0.37);
   width: 90%;

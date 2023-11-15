@@ -52,17 +52,17 @@ a{
     text-decoration: none;
     color:white ;
 }
-header{
-    color:  rgba(46, 69, 39, 0.53);
+header {
+    color: rgba(46, 69, 39, 0.53);
     margin: 0 auto;
     width: 100%;
+    height: clamp(287px, 75vw, 600px);
     background-size: cover;
     background-repeat: no-repeat;
-    // background-attachment: fixed;
-    background-position:right ;
+    background-position: right;
     overflow-x: hidden;
     overflow-y: hidden;
-    background-image: url("./img/background-top.jpg");
+    /* background-image: url(./img/background-top.jpg); */
 
 @media screen and (max-width:400px){
     background-image: url("./img/background/ mobile.png");
@@ -124,11 +124,17 @@ h2{
 
 
 }
+.wrapper_timer{
+    top: clamp(150px, 45vw, 350px);
+    position: absolute;
+    width: clamp(60%, 5vw, 80%);
+    height: 100px;
+}
 .mobile-version{
     display: none;
     color:  rgba(46, 69, 39, 1);
     text-shadow:  3px 6px rgba(0, 0, 0, 0.3);
-    font-size: clamp(2.4em, 5vw, 5.6em );
+    font-size: clamp(1.9em, 6vw, 5.6em );
     position: absolute;
     text-align: center;
     @media screen and (max-width: 400px) {
@@ -250,18 +256,21 @@ ul li::before {
             text-shadow: 2px 2px #f6f1f1;
        }
     }
-.timer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    color:  rgba(46, 69, 39, 1);
-    text-shadow: 1px 1px 2px  white, 0 0 1em rgba(46, 69, 39, 1), 0 0 0.2em rgba(46, 69, 39, 1);
+
+    .timer {
+        margin: 0 auto;
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        color: rgb(46, 69, 39);
+        text-shadow: 1px 1px 2px white, 0 0 1em rgb(46, 69, 39), 0 0 0.2em rgb(46, 69, 39);
+    
     .timer_list{
         // margin-top: -150px;
         width: 120px;
         min-height: 180px;
         display: block;
-        font-size: clamp(1.0em , 2vw, 2.0em);
+        font-size: clamp(0.9em, 2vw, 2em);
         text-shadow: 1px 1px 2px  white, 0 0 1em rgba(46, 69, 39, 1), 0 0 0.2em rgba(46, 69, 39, 1);
     }
 
@@ -307,7 +316,7 @@ main{
 .inavation_ps {
     font-size: clamp(1.0em, 3vw, 2.0em);
 }
-.invitation, .program, .form ,.footer, .wrapper_timer{
+.invitation, .program, .form ,.footer{
     margin: 0 auto;
     background-color: rgba(206, 206, 206, 0.37);
     width: 90%;
