@@ -120,7 +120,7 @@ h2 {
 }
 
 .wrapper_timer {
-  top: clamp(150px, 45vw, 350px);
+  top: clamp(150px, 45vw, 343px);
   position: absolute;
   width: clamp(60%, 5vw, 80%);
   height: 100px;
