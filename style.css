@@ -414,6 +414,7 @@ main {
   visibility: visible !important;
   position: static;
   border: 1px solid rgb(46, 69, 39);
+  border-radius: 5px;
   color: rgb(0, 0, 0);
   opacity: 1;
 }
