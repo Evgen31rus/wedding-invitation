@@ -42,8 +42,8 @@ body {
 }
 
 .h2 {
-  font-size: clamp(1.4em, 3vw, 2.8em);
-  width: clamp(40%, 3vw, 30%);
+  font-size: clamp(1.8em, 3vw, 2.8em);
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -94,12 +94,6 @@ header {
   display: none !important;
 }
 
-@media screen and (max-width: 350px) {
-  .inavation_title {
-    font-size: clamp(1em, 3vw, 1.3em);
-  }
-}
-
 h2 {
   font-family: "Fasthand", cursive;
   color: rgb(46, 69, 39);
@@ -120,7 +114,7 @@ h2 {
 }
 
 .wrapper_timer {
-  top: clamp(150px, 45vw, 343px);
+  top: clamp(150px, 42vw, 340px);
   position: absolute;
   width: clamp(60%, 5vw, 80%);
   height: 100px;
@@ -313,15 +307,15 @@ main {
 .inovation_content {
   margin: 0 auto;
   width: 100%;
-  font-size: clamp(1.2em, 3vw, 2.5em);
+  font-size: clamp(1.6em, 2vw, 2.5em);
 }
 
 .inovation_wishes {
-  font-size: clamp(1.2em, 3vw, 2.5em);
+  font-size: clamp(1.6em, 2vw, 2.5em);
 }
 
 .inavation_ps {
-  font-size: clamp(1em, 3vw, 2em);
+  font-size: clamp(1.5em, 2vw, 2em);
 }
 
 .invitation, .program, .form, .footer {
@@ -350,7 +344,7 @@ main {
 }
 
 .programs_title {
-  font-size: clamp(1.5em, 2vw, 2.5em);
+  font-size: clamp(1.8em, 2vw, 2.5em);
 }
 
 .list_program {
@@ -389,7 +383,7 @@ main {
   align-items: center;
 }
 .form label {
-  font-size: clamp(1em, 2vw, 1.5em);
+  font-size: clamp(1.3em, 2vw, 2em);
   margin-bottom: -20px;
   text-align: start;
   align-items: start;
@@ -401,8 +395,9 @@ main {
   color: white;
   background: rgb(46, 69, 39);
   opacity: 0.9;
-  height: clamp(26px, 25vw, 42px);
-  font-size: calmp(0.2em, 35vw, 1.5em);
+  height: clamp(26px, 35vw, 42px);
+  font-size: clamp(1em, 3vw, 2em) !important;
+  padding: 5px;
   box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.4) !important;
   transition: transform 0.3s;
 }
@@ -423,6 +418,9 @@ main {
   border-radius: 10px;
   color: rgb(0, 0, 0);
   opacity: 1;
+}
+.form input -moz-outline-radius {
+  border-radius: 5px;
 }
 .form input::-webkit-outer-spin-button,
 .form input::-webkit-inner-spin-button {
@@ -448,7 +446,6 @@ main {
   width: 20px;
   margin: 0;
   padding: 0;
-  position: static;
   margin-right: 20px;
   margin-bottom: 10px;
   visibility: hidden;
@@ -466,8 +463,8 @@ main {
   transition: transform 0.5s;
 }
 .presence .wrapper .input_pseudo {
-  width: clamp(12px, 2vw, 20px);
-  height: clamp(12px, 2vw, 20px);
+  width: clamp(15px, 2vw, 40px);
+  height: clamp(15px, 2vw, 40px);
   margin-right: clamp(0px, 5vw, 10px);
   background-color: rgb(217, 217, 217);
   display: block;
@@ -483,7 +480,7 @@ main {
 }
 .presence .wrapper label {
   cursor: pointer;
-  font-size: clamp(1em, 2vw, 1.5em);
+  font-size: clamp(1.5em, 2vw, 1.9em);
 }
 
 .footer {
@@ -491,7 +488,7 @@ main {
 }
 
 .footer .h2 {
-  font-size: clamp(1.8em, 3vw, 2.8em);
+  font-size: clamp(2em, 3vw, 3em);
   width: 100%;
 }
 
