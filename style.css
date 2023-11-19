@@ -6,7 +6,6 @@ html {
   background-color: rgb(128, 128, 128);
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-style: "Fasthand", cursive;
   color: rgb(46, 69, 39);
   font-size: 62.5%;
 }
@@ -28,7 +27,7 @@ body {
   position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
-  font-family: "EB Garamond", cursive;
+  font-family: "EB Garamond", cursive, Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -267,17 +266,18 @@ input:hover {
 
 .timer {
   margin: 0 auto;
-  width: 65%;
+  width: 100%;
   display: flex;
   justify-content: center;
   color: rgb(46, 69, 39);
   text-shadow: 1px 1px 2px white, 0 0 1em rgb(46, 69, 39), 0 0 0.2em rgb(46, 69, 39);
 }
 .timer .timer_list {
-  width: 120px;
+  width: 300px;
+  text-align: center;
   min-height: 180px;
   display: block;
-  font-size: clamp(0.9em, 2vw, 2em);
+  font-size: clamp(1.3em, 2vw, 2em);
   text-shadow: 1px 1px 2px white, 0 0 1em rgb(46, 69, 39), 0 0 0.2em rgb(46, 69, 39);
 }
 .timer .timer_list p:nth-child(2) {

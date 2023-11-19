@@ -12,7 +12,6 @@ html{
    background-color: rgb(128, 128, 128);
    overflow-x: hidden;
    scroll-behavior: smooth;
-   font-style: $fontStyle1;
    color:$menuFontColor; 
    font-size: 62.5%;
 }
@@ -31,7 +30,7 @@ body{
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
-    font-family: $fontStyle2;
+    font-family: $fontStyle2, Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -274,7 +273,7 @@ ul li::before {
 
     .timer {
         margin: 0 auto;
-        width: 65%;
+        width: 100%;
         display: flex;
         justify-content: center;
         color: rgb(46, 69, 39);
@@ -282,10 +281,11 @@ ul li::before {
     
     .timer_list{
         // margin-top: -150px;
-        width: 120px;
+        width: 300px;
+        text-align: center;
         min-height: 180px;
         display: block;
-        font-size: clamp(0.9em, 2vw, 2em);
+        font-size: clamp(1.3em, 2vw, 2em);
         text-shadow: 1px 1px 2px  white, 0 0 1em rgba(46, 69, 39, 1), 0 0 0.2em rgba(46, 69, 39, 1);
     }
 

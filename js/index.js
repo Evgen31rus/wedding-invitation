@@ -42,6 +42,7 @@ function detectBrowser() {
 
      if (userAgent.indexOf('safari') > -1) {
       Array.from(document.querySelector('head').children).push(` <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=EB+Garamond:ital,wght@1,500&family=Fasthand&family=Flamenco&display=swap" rel="stylesheet">`)
+      document.querySelector('body').style.fontFamily='$fontStyle2,  Arial, Helvetica, sans-serif'
      }
     }
 detectBrowser()
