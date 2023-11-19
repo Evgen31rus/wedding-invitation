@@ -515,8 +515,8 @@ main {
 
 .block_1 {
   margin: 20% auto;
-  width: clamp(300px, 50vw, 500px);
-  height: 200px;
+  width: clamp(50%, 50vw, 100%);
+  height: auto;
   display: flex;
   vertical-align: middle;
   justify-content: center;
@@ -531,7 +531,8 @@ main {
 }
 
 .window_title {
-  width: clamp(50%, 50vw, 100%);
+  width: clamp(50%, 40vw, 100%);
+  text-wrap: wrap;
   text-align: center;
   font-size: clamp(1.5em, 2vw, 2.5em);
   font-family: "Fasthand", cursive;
