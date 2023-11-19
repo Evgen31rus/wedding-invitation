@@ -72,6 +72,7 @@ header {
 
 .button_menu {
   align-items: end;
+  z-index: 55;
 }
 
 .nav_active {
@@ -122,14 +123,15 @@ h2 {
 
 .mobile-version {
   display: none;
+  padding: 0px 10px;
+  font-family: "Fasthand", cursive;
   color: rgb(46, 69, 39);
   text-shadow: 3px 6px rgba(0, 0, 0, 0.3);
   font-size: clamp(1.9em, 6vw, 5.6em);
-  font-style: "Fasthand", cursive;
   position: absolute;
   text-align: center;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .mobile-version {
     display: flex;
   }
@@ -141,6 +143,7 @@ h2 {
 }
 
 .border_radius_safari {
+  z-index: 3;
   width: clamp(3.5em, 18vw, 8em);
   height: clamp(3.5em, 18vw, 8em);
   border-radius: 50%;
@@ -352,7 +355,7 @@ main {
   display: flex;
 }
 .list_program .time_program {
-  font-size: clamp(1.2em, 2vw, 2em);
+  font-size: clamp(1.6em, 2vw, 2.5em);
 }
 @media screen and (max-width: 415px) {
   .list_program .time_program {
@@ -362,7 +365,7 @@ main {
 .list_program .event_program {
   width: clamp(200px, 65vw, 500px);
   text-align: end;
-  font-size: clamp(1.2em, 2vw, 2em);
+  font-size: clamp(1.6em, 2vw, 2.5em);
 }
 .list_program .adress {
   display: block;
@@ -504,7 +507,7 @@ main {
 }
 
 .loading_window_active {
-  z-index: 5 !important;
+  z-index: 56 !important;
   opacity: 1;
   transition: opacity 1s;
   overflow-y: hidden;

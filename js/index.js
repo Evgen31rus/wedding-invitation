@@ -109,11 +109,13 @@ if(nav.classList[0]!='nav_active'){
         nav.classList.add('nav_active')
         document.querySelector('.button_menu').classList.add('input_active')
         document.querySelector('.modal_background').style.display='block'
+        document.querySelector('.border_radius_safari').style.opacity='0'
     }else{
         nav.classList.remove('nav_not_active')
         nav.classList.add('nav_active')
         document.querySelector('.button_menu').classList.add('input_active')
         document.querySelector('.modal_background').style.display='block'
+        document.querySelector('.border_radius_safari').style.opacity='0'
     }
 for (let index = 0; index < mainInfo[0].navigation.length; index++) {
 let li = document.createElement('li')
@@ -144,6 +146,7 @@ function closeMenu(){
     nav.classList.add('nav_not_active')
     document.querySelector('.button_menu').classList.remove('input_active')
     document.querySelector('.modal_background').style.display='none'
+    document.querySelector('.border_radius_safari').style.opacity='0.8'
 }
 
 document.querySelector('.top-data').textContent = mainInfo[1].dateMain[0]
