@@ -41,8 +41,8 @@ function detectBrowser() {
  
 
      if (userAgent.indexOf('safari') > -1) {
-      Array.from(document.querySelector('head').children).push(` <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=EB+Garamond:ital,wght@1,500&family=Fasthand&family=Flamenco&display=swap" rel="stylesheet">`)
-      document.querySelector('body').style.fontFamily='$fontStyle2,  Arial, Helvetica, sans-serif'
+    //   Array.from(document.querySelector('head').children).push(` <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=EB+Garamond:ital,wght@1,500&family=Fasthand&family=Flamenco&display=swap" rel="stylesheet">`)
+      document.querySelector('body').style.fontFamily='sans-serif, Arial, Helvetica, '
      }
     }
 detectBrowser()
@@ -66,10 +66,11 @@ function startShowLoadingWindow(){
         document.querySelector('html').style.background='rgb(128, 128, 128)'
         document.querySelector('html').style.overflowY='visible'
         document.querySelector('body').style.boxShadow='1px 3px 6px rgba(0, 0, 0, 0.3)'
+       clearInterval(interval)
     }, 5000)
 }
 let array = []
-setInterval(()=>{
+ const interval = setInterval(()=>{
     array.push('.')
     if(array.length>3){
         array = []
@@ -79,7 +80,12 @@ setInterval(()=>{
     document.querySelector('.animation_span').textContent =   array.join(' ')
     }
 }, 500) 
+
+
 startShowLoadingWindow()
+
+  
+
 
 //////////////////////////////////////////////////////////////////////////HEADER///////////////////////////////////////////
 const smoothLinks = document.querySelectorAll('a[href^="#"]');

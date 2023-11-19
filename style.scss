@@ -178,16 +178,16 @@ h2{
         color: white ;
         border: 0;
         
-        
-
-
-        
     }
-    .input_active{
-        visibility: hidden;
-        opacity: 0;
-        transform: rotate(1turn);
-        transition: opacity 1s transform 0.5s;
+    .nav_active {
+        visibility: visible;
+        transition: margin-left 0.5s;
+        display: flex;
+        opacity: 0.7;
+        z-index: 4;
+        left: 40%;
+        margin-right: -50%;
+        transform: translate(-50%, 0%)
     }
     input:hover{
         padding: 0;
@@ -209,7 +209,7 @@ h2{
   
   
 .nav{
-   width:clamp(250px, 60vw, 450px);
+   width:clamp(200px, 40vw, 350px);
    padding: 10px;
    max-height: 500px;
     border-radius: 20px;
@@ -223,14 +223,18 @@ h2{
     top: 30px;
     color:white;
     z-index: 4;
+    font-weight:bold;
     box-shadow: 3px 3px rgba(168, 227, 184, 0.4), -1em 0 .4em rgba(112, 112, 68, 0.5);
     
     ul{
         list-style: none;
     }
     ul li{
-        z-index: 2!important;
-        opacity: 1!important;
+        align-items: center;
+        text-align: start;
+        z-index: 2 !important;
+        opacity: 1 !important;
+        display: flex;
     }
     ul li a{
         font-size: clamp(1.3em, 2vw, 3.8em);
@@ -247,7 +251,7 @@ ul li::before {
 
 .nav_active{
     visibility: visible;
-    margin-left: clamp(6%, 10vw, 20%);
+    margin-left: 10%;
     transition: margin-left 0.5s;
     opacity: 0.7;
     z-index: 4;
@@ -286,6 +290,7 @@ ul li::before {
         min-height: 180px;
         display: block;
         font-size: clamp(1.3em, 2vw, 2em);
+        font-weight:bold;
         text-shadow: 1px 1px 2px  white, 0 0 1em rgba(46, 69, 39, 1), 0 0 0.2em rgba(46, 69, 39, 1);
     }
 
@@ -435,9 +440,8 @@ font-size: clamp(1.8em, 2vw, 2.5em);
         border-radius: 10px;
         color: rgba(0, 0, 0, 1);
         opacity:1;
-        -moz-outline-radius {
-            border-radius: 5px;
-        }
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
 
     }
 
@@ -547,6 +551,7 @@ transition: transform 0.5s;
     z-index: 0;
     opacity: 0;
     transition: opacity 1s;
+    overflow: hidden;
 
   }
 
@@ -570,14 +575,15 @@ transition: 1s;
 
     }
     .animation_span{
-        margin-left: 10px;
+        text-align: center;
+        // margin-left: 10px;
         position: absolute;
     }
 .window_title{
     width: clamp(50%, 40vw, 100%);
     text-wrap: wrap;
     text-align: center;
-    font-size: clamp(1.5em, 2vw, 2.5em);
+    font-size: clamp(1.0em, 2vw, 2.5em);
     font-family: $fontStyle1 ;
     color:  rgb(163, 20, 54);
     font-weight: 400;
